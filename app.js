@@ -7,6 +7,8 @@ const mysql=require('mysql')
 const fs=require('fs')
 const multer=require('multer');
 const { query } = require('express');
+const port=process.env.PORT || 8000;
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
@@ -149,4 +151,6 @@ app.post('/updatesources',(req,res)=>{
 //     });
 // })
 
-app.listen(3000);
+app.listen(port,()=>{
+    console.log(`Website running on port ${port}`);
+});
