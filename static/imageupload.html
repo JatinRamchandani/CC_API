@@ -1,0 +1,25 @@
+<Html>
+    <head>
+        <style>
+            div{
+               padding: 20px; 
+            }
+            #box1{
+                padding: 5px;
+                border: 2px solid rgb(17, 57, 177);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <Body>
+        <div>
+            <form method=POST action="/uploadimage"  enctype="multipart/form-data">
+                <input type=text name="Topic" placeholder="Topic Name" id="box1" size="40" required><br><br>
+                <input type=file name="Source" placeholder="Source" id="box1" size="70" multiple><br><br>
+                
+                <input type=submit value="Update Topic">
+    
+            </form>
+        </div>
+    </Body>
+</Html>
