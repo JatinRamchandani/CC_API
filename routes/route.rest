@@ -1,0 +1,33 @@
+GET http://localhost:8000/topics/alltopics 
+
+
+###
+
+POST http://localhost:8000/topics/addtopic
+Content-Type: application/json
+
+{
+    "topic": "Codingnew",
+    "sourceDesc": "Code desc",
+    "s1_img": "acmjbksdbfs",
+    "source1": "linking",
+    "s2_img": "acm",
+    "source2": "link",
+    "s3_img": "acm",
+    "source3": "link",
+    "s4_img": "acm",
+    "source4": "link" ,
+    "s5_img": "acm",
+    "source5": "link",
+    "s6_img": "acm",
+    "source6": "link",
+    "s7_img": "acm",
+    "source7": "link",
+    "s8_img": "acm",
+    "source8": "link",
+    "s9_img": "acm",
+    "source9": "link",
+    "s10_img": "acm",
+    "source10": "link"
+}
+
